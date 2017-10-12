@@ -1,0 +1,23 @@
+<!--pages/code/code.wxml-->
+<view class="header">
+    <view class="header_text">
+    <text>具体项目合作请联系作者</text>
+    <text style="margin-top:20px;font-size:15px">微信号： v0007770</text>
+    <text style="margin-top:20px;font-size:15px">公众号： 小证</text>
+    <text style="margin-top:10px;font-size:15px">二维码：</text>
+      <image bindlongtap="saveImage" style="height:160px;width:160px;" src="../images/code.jpeg"></image>  
+    <text style="margin-top:10px;font-size:15px">公众号：</text>
+    <image bindlongtap="previewImage" style="height:160px;width:160px;" src="../images/people.jpg"></image>
+    <text style="font-size:12px">（长按预览保存）</text>
+</view>
+
+<view class="weui-footer" style="margin-top:30px;">
+                <view class="weui-footer__links">
+                  <navigator url="../about/aboutus" class="weui-footer__link" style="color: #16a5af;">关于E-X</navigator>
+                  <!--<navigator url="../contact/contactus" class="weui-footer__link" style="color: #16a5af;">联系我们</navigator>-->
+                </view>
+                <view class="weui-footer__text">Copyright © 2015-2017 dongzheng.dd@163.com</view>
+              </view>
+
+</view>
+

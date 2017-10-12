@@ -1,0 +1,134 @@
+/* pages/experience/experience.wxss */
+.placeholder1{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #16a5af;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder2{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #d81e06;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder3{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #1296db;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder4{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #ffa900;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder5{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #9932cc;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder13{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #6495ed;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder6{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #778899;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder7{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #32cd32;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder8{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #6a5acd;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder9{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #cd5c5c;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder10{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #4169e1;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder11{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #a0522d;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.placeholder12{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #00ced1;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #fff;
+}
+.bg{
+    background-color: #fff;
+}
+image{
+    margin: 4px 0;
+}
+.page__titles{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 24px;
+}
+.weui-article__imgs{
+    width: 100%;
+    padding: 0px;
+}

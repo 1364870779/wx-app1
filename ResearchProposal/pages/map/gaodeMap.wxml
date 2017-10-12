@@ -1,0 +1,22 @@
+
+<!--pages/maps/gaodeMap.wxml-->
+<view class="weui-article__ps">
+  <image class="weui-article__imgs" src="{{imageUrlOne}}" />
+</view>
+<view class="weather_text">
+  <text class="text" style="font-size:18px;">{{weather.city.text}} : {{weather.city.data}}</text>
+  <text class="text" style="font-size:14px;">{{weather.weather.text}} : {{weather.weather.data}}</text>
+  <text class="text" style="font-size:14px;">{{weather.temperature.text}} : {{weather.temperature.data}} ℃</text>
+  <text class="text" style="font-size:14px;">风速 : {{weather.winddirection.data}} {{weather.windpower.data}}</text>
+  <text class="text" style="font-size:14px;">{{weather.humidity.text}} : {{weather.humidity.data}}</text>
+  <text class="text" style="font-size:18px;margin-top:20px;">获取周边POI有趣</text>
+</view>
+  
+
+<view class="map_text">
+  <text class="h1">{{textData.name}}</text>
+  <text>{{textData.desc}}</text>
+</view>
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="28" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>
+</view>

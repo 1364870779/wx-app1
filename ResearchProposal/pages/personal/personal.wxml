@@ -1,0 +1,61 @@
+
+<!--pages/personal/personal.wxml-->
+<view class="header">
+    <view class="weui-article__ps">
+  <image class="weui-article__imgs" src="{{imageUrlOne}}" />
+</view>
+<view bindtap="bindViewTap" class="userinfo">
+    <!-- <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image> -->
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="talk">
+    <contact-button type="default-light" size="30" session-from="weapp"></contact-button>
+</view>
+</view>
+
+<view class="cell">
+    <!--<view class="weui-cells weui-cells_after-title">-->
+            <navigator url="{{code}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{iconOne}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">合作交流</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="{{code}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{iconTwo}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">加入我们</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="{{code}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{iconThree}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">关注我们</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator bindtap="shareApp" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{iconFour}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">致电咨询</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator bindtap="openConfirm" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{iconFive}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">清除缓存</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator bindtap="openAlert" url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{iconSix}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">版本更迭</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">1.0.2 beta</view>
+            </navigator>
+        <!--</view>-->
+</view>

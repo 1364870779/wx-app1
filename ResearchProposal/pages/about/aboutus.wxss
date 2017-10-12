@@ -1,0 +1,16 @@
+/* pages/about/aboutus.wxss */
+.centerview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.centerviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+.texts{
+    font-size: 10px;
+}

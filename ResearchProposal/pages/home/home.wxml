@@ -1,0 +1,285 @@
+
+<!--pages/home/home.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__contents" hidden="{{activeIndex != 0}}">
+          <view class="containers">
+            <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="EventHandle" enable-back-to-top="true">
+              <view class="page__bd">
+                <view class="weui-search-bar">
+                  <view class="weui-search-bar__form">
+                    <view class="weui-search-bar__box">
+                      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                      <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                      </view>
+                    </view>
+                    <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                      <icon class="weui-icon-search" type="search" size="14"></icon>
+                      <view class="weui-search-bar__text">搜索</view>
+                    </label>
+                  </view>
+                  <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput" style="color:#16a5af">取消</view>
+                </view>
+                <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+                  <navigator url="{{boobe}}" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                      <view>啵呗</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{JCSsport}}" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                      <view>JCS运动</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{PaperSource}}" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                      <view>纸源网</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{zhihuiqichen}}" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                      <view>智慧启辰</view>
+                    </view>
+                  </navigator>
+                </view>
+              </view>
+              <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#16a5af" circular="true" style="height:230px;">
+                <block wx:for="{{imgUrls}}">
+                  <swiper-item>
+                    <view class="imageview" color="#ffa800">
+                      <image src="{{item}}" class="slide-image" mode="aspectFill"/>
+                    </view>
+                  </swiper-item>
+                </block>
+              </swiper>
+
+             
+      
+              <view class="weui-panel weui-panel_access">
+
+                <!--<view class="weui-panel__hd">图文组合列表</view>-->
+                <view class="weui-panel__bd">
+                  <navigator url="{{boobe}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/boobe.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">啵呗</view>
+                      <view class="weui-media-box__desc">BOOBE啵呗是闲置奢品租赁共享服务APP，啵主将拥有的闲置奢品在啵呗上发布寄租，啵客下单租用；APP还提供鉴定、交换、寄售、养护、培训、社交等服务。</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{JCSsport}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/jcs.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">JCS运动</view>
+                      <view class="weui-media-box__desc">本应用能够对运动爱好者，以及有运动需求的人，进行运动数据的采集和分析，让您在轻松的状态下，全方面掌握自己的运动数据和状态，以管理健康的管理专家。</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{PaperSource}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/papersource.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">纸源网（买家版）</view>
+                      <view class="weui-media-box__desc">厦门建发纸业有限公司是厦门建发股份有限公司所属专业经营纸张，纸浆，板材，木片，废纸和纸制品贸易业务的全资子公司，围绕林浆纸产业链，为客户提供原材料采购、仓储加工、物流配送、销售结算、风险管理、融资租赁等服务，提供制浆造纸、印刷包装整体解决方案。</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{zhihuiqichen}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/zhihuitongzhi.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">智慧启辰</view>
+                      <view class="weui-media-box__desc">TTE主要产品有倒车雷达、防盗器、车用摄像头、车身控制系统、行车记录仪、胎压侦测系统、智能车内后视镜等汽车专业电子产品，通过App控制车载蓝牙模块进行操作汽车。</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{wuhuaniu}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/wuhuaniu.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">五花牛</view>
+                      <view class="weui-media-box__desc">五花牛是一款专业的证券信息分享APP，能够给用户带来中国股市专业的、权威的政策解析和股市解析。及时了解证券市场的新信息，掌握动态。</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{baimianzan}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/baimianzan.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">百面贊</view>
+                      <view class="weui-media-box__desc">这是一个简单的在线电台播放软件，界面简约时尚，有基本的电台开始、暂停以及关闭程序功能，适合老年人以及电台爱好者使用。</view>
+                    </view>
+                  </navigator>
+                </view>
+              </view>
+              <view class="weui-footer">
+                <view class="weui-footer__links">
+                  <navigator url="../about/aboutus" class="weui-footer__link" style="color: #16a5af;">关于E-X</navigator>
+                  <navigator url="../code/code" class="weui-footer__link" style="color: #16a5af;">联系我们</navigator>
+                </view>
+                <view class="weui-footer__text">Copyright © 2015-2017 dongzheng.dd@163.com</view>
+              </view>
+            </scroll-view>
+          </view>
+        </view>
+        <view class="weui-tab__contents" hidden="{{activeIndex != 1}}">
+          <view class="page__bd">
+            <view class="weui-search-bar">
+              <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                  <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                  <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                  <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                    <icon type="clear" size="14"></icon>
+                  </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                  <icon class="weui-icon-search" type="search" size="14"></icon>
+                  <view class="weui-search-bar__text">搜索</view>
+                </label>
+              </view>
+              <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput" style="color:#16a5af">取消</view>
+            </view>
+            <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+                  <navigator url="{{boobe}}" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                      <view>啵呗</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{JCSsport}}" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                      <view>JCS运动</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{PaperSource}}" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                      <view>纸源网</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{zhihuiqichen}}" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                      <view>智慧启辰</view>
+                    </view>
+                  </navigator>
+            </view>
+          </view>
+
+          
+          <view class="horizonalview">
+            <scroll-view scroll-x="true" style="white-space: nowrap;width:100%;height:200px; ">
+            <view style="background:#ffffff;width: 300px; height: 200px; display:inline-block "><image src="http://ohqqhwkx4.bkt.clouddn.com/apple.jpg" mode="aspectFill" class="slide-image"/></view>
+              <view style="background:#ffffff;width: 300px; height: 200px; display:inline-block "><image src="http://ohqqhwkx4.bkt.clouddn.com/sanweimas.jpg" mode="aspectFill" class="slide-image"/></view>
+             <view style="background:#ffffff;width: 300px; height: 200px; display:inline-block "><image src="http://ohqqhwkx4.bkt.clouddn.com/picss.jpeg" mode="aspectFill" class="slide-image"/></view>
+             <view style="background:#ffffff;width: 300px; height: 200px; display:inline-block "><image src="http://ohqqhwkx4.bkt.clouddn.com/baimainzan.png" mode="aspectFill" class="slide-image"/></view>
+             <view style="background:#ffffff;width: 300px; height: 200px; display:inline-block "><image src="http://ohqqhwkx4.bkt.clouddn.com/apples.jpg" mode="aspectFill" class="slide-image"/></view>
+            </scroll-view>
+          </view>
+
+<!--<div class="items">
+            <div class="row">
+              <div class="item1"></div>
+              <div class="item2"></div>
+              <div class="item1"></div>
+            </div>
+            <div class="row">
+              <div class="item2"></div>
+              <div class="item1"></div>
+              <div class="item2"></div>
+            </div>
+            <div class="row">
+              <div class="item1"></div>
+              <div class="item2"></div>
+              <div class="item1"></div>
+            </div>
+          </div>-->
+
+           <view class="weui-panel weui-panel_access">
+
+                <!--<view class="weui-panel__hd">图文组合列表</view>-->
+                <view class="weui-panel__bd">
+                  <navigator url="{{sanweima}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/sanweima_icon.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">三维码大数据分析云平台</view>
+                      <view class="weui-media-box__desc">三维码云数据分析平台、大数据整合。</view>
+                    </view>
+                  </navigator>
+                  <!--<navigator url="{{JCSsport}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/jcs.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">JCS运动</view>
+                      <view class="weui-media-box__desc">本应用能够对运动爱好者，以及有运动需求的人，进行运动数据的采集和分析，让您在轻松的状态下，全方面掌握自己的运动数据和状态，以管理健康的管理专家。</view>
+                    </view>
+                  </navigator>-->
+                  <!--<navigator url="{{PaperSource}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/papersource.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">纸源网（买家版）</view>
+                      <view class="weui-media-box__desc">厦门建发纸业有限公司是厦门建发股份有限公司所属专业经营纸张，纸浆，板材，木片，废纸和纸制品贸易业务的全资子公司，围绕林浆纸产业链，为客户提供原材料采购、仓储加工、物流配送、销售结算、风险管理、融资租赁等服务，提供制浆造纸、印刷包装整体解决方案。</view>
+                    </view>
+                  </navigator>-->
+                  <navigator url="{{zhihuiqichen}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/zhihuitongzhi.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">智慧启辰</view>
+                      <view class="weui-media-box__desc">TTE主要产品有倒车雷达、防盗器、车用摄像头、车身控制系统、行车记录仪、胎压侦测系统、智能车内后视镜等汽车专业电子产品，通过App控制车载蓝牙模块进行操作汽车。</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{wuhuaniu}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/wuhuaniu.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">五花牛</view>
+                      <view class="weui-media-box__desc">五花牛是一款专业的证券信息分享APP，能够给用户带来中国股市专业的、权威的政策解析和股市解析。及时了解证券市场的新信息，掌握动态。</view>
+                    </view>
+                  </navigator>
+                  <navigator url="{{baimianzan}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                      <image class="weui-media-box__thumb" src="../images/baimianzan.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__title">百面贊</view>
+                      <view class="weui-media-box__desc">这是一个简单的在线电台播放软件，界面简约时尚，有基本的电台开始、暂停以及关闭程序功能，适合老年人以及电台爱好者使用。</view>
+                    </view>
+                  </navigator>
+                </view>
+              </view>
+          
+          <view class="weui-footer">
+            <view class="weui-footer__links">
+              <navigator url="{{aboutUs}}" class="weui-footer__link" style="color: #16a5af;">关于E-X</navigator>
+              <navigator url="../code/code" class="weui-footer__link" style="color: #16a5af;">联系我们</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2015-2017 dongzheng.dd@163.com</view>
+          </view>
+        </view>
+
+        <!--<view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>-->
+      </view>
+    </view>
+  </view>
+</view>

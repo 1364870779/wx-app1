@@ -1,0 +1,59 @@
+<!--pages/product/productDetail.wxml-->
+<view class="page">
+  
+    <view class="weui-article__ps">
+  <image class="weui-article__imgs" src="{{imageUrlOne}}" />
+
+</view>
+  <view class="page__hd">
+   <!--<view class="weui-article__ps">
+            <image class="weui-article__imgs" src="{{imageUrlOne}}" mode="aspectFit"  />
+          </view>-->
+    <view class="page__titles">{{title}}</view>
+    <!--<view class="page__desc">文章</view>-->
+  </view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1">{{secondtitle}}</view>
+      <view class="weui-article__section">
+        <view class="weui-article__title">项目设计</view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">1.1 开发平台</view>
+          <view class="weui-article__p">{{tool}}
+          </view>
+          <!--<view class="weui-article__p">
+            <image class="weui-article__imgs" src="{{imageUrlOne}}" mode="aspectFit"  />
+          </view>-->
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">1.2 技术细节</view>
+          <view class="weui-article__p">
+            {{skillDetail}}
+          </view>
+          <!--<view class="weui-article__p">
+            <image class="weui-article__imgs" src="{{imageUrlOne}}" mode="aspectFit"  />
+          </view>-->
+        </view>
+
+<view class="weui-article__section">
+          <view class="weui-article__h3">1.3 具体功能</view>
+          <view class="weui-article__p">
+            {{detailFunction}}
+          </view>
+         
+        </view>
+
+        <view class="weui-article__section">
+          <view class="weui-article__h3">1.4 项目案例</view>
+          <view class="weui-article__p">
+            {{detailWork}}
+          </view>
+          <!--<view class="weui-article__p">
+            <image class="weui-article__imgs" src="{{imageUrlOne}}" mode="aspectFit"  />
+          </view>-->
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

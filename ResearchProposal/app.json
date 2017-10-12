@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/home/home",
+    "pages/products/products",
+    "pages/experience/experience",
+    "pages/personal/personal",
+    "pages/android/andview",
+    "pages/about/aboutus",
+    "pages/product/productDetail",
+    "pages/map/gaodeMap",
+    "pages/code/code"
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Explorers-X",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": "false"
+  },
+  "tabBar": {
+    "color": "#a1a1a1",
+    "selectedColor": "#16a5af",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "产品",
+      "iconPath": "pages/images/home_unselect.png",
+      "selectedIconPath": "pages/images/home_select.png"
+    },{
+      "pagePath": "pages/products/products",
+      "text": "业务",
+      "iconPath": "pages/images/product_unselect.png",
+      "selectedIconPath": "pages/images/product_select.png"
+    },{
+      "pagePath": "pages/experience/experience",
+      "text": "技能",
+      "iconPath": "pages/images/skill_unselect.png",
+      "selectedIconPath": "pages/images/skill_select.png"
+    },{
+      "pagePath": "pages/personal/personal",
+      "text": "我们",
+      "iconPath": "pages/images/mine_unselect.png",
+      "selectedIconPath": "pages/images/mine_select.png"
+    }],
+    "position": "bottom"
+  }
+}

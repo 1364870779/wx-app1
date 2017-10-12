@@ -1,0 +1,42 @@
+
+<!--pages/products/products.wxml-->
+<view class="whlength">
+  <navigator url="{{FIRST}}">
+    <view class="cardView">
+      <image src="http://oot34wnx6.bkt.clouddn.com/first.png" style="width:100%;height:180px;" mode="aspectFill"></image>
+    </view>
+  </navigator>
+  <navigator url="{{SECOND}}">
+    <view class="cardView">
+      <image src="http://oot34wnx6.bkt.clouddn.com/second.png" style="width:100%;height:180px;" mode="aspectFill"></image>
+    </view>
+  </navigator>
+  <navigator url="{{THREE}}">
+    <view class="cardView">
+      <image src="http://oot34wnx6.bkt.clouddn.com/six.png" style="width:100%;height:180px;" mode="aspectFill"></image>
+    </view>
+  </navigator>
+  <navigator url="{{FOUR}}">
+    <view class="cardView">
+      <image src="http://oot34wnx6.bkt.clouddn.com/three.png" style="width:100%;height:180px;" mode="aspectFill"></image>
+    </view>
+  </navigator>
+  <navigator url="{{FIVE}}">
+    <view class="cardView">
+      <image src="http://oot34wnx6.bkt.clouddn.com/four.png" style="width:100%;height:180px;" mode="aspectFill"></image>
+    </view>
+  </navigator>
+  <navigator url="{{SIX}}">
+    <view class="cardView">
+      <image src="http://oot34wnx6.bkt.clouddn.com/five.png" style="width:100%;height:180px;" mode="aspectFill"></image>
+    </view>
+  </navigator>
+  <navigator url="{{SEVEN}}">
+    <view class="cardView">
+      <image src="http://oot34wnx6.bkt.clouddn.com/seven.png" style="width:100%;height:180px;" mode="aspectFill"></image>
+    </view>
+  </navigator>
+  <!--<view class="cardView">
+    <map id="map" longitude="{{location.longitude}}" latitude="{{location.latitude}}" scale="18" bindmarkertap="markertap" bindregionchange="regionchange" show-location="true" iconPath="../images/ExplorersX.jpg" style="width: 100%; height: 180px;"></map>
+  </view>-->
+</view>

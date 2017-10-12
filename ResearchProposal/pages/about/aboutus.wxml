@@ -1,0 +1,32 @@
+
+<!--pages/about/aboutus.wxml-->
+<view class="weui-progress" style="padding-top:0px;">
+  <view class="weui-progress__bar">
+    <progress percent="{{progress}}" stroke-width="300" color="#16a6ae" />
+  </view>
+
+  <!--<view class="weui-progress__opr">
+                <icon type="cancel" size="1"></icon>
+            </view>-->
+</view>
+<view class="centerview">
+  <image style="width:100px;height:100px;" src="../images/ExplorersX.jpg" background-size="cover"></image>
+</view>
+<view class="centerview">
+  <!--<text>关于Explorers-X</text>-->
+</view>
+<view class="centerviews">
+  <text class="texts">项目地址</text>
+</view>
+<view class="centerviews">
+  <text class="weui-footer__text" selectable="true">https://github.com/</text>
+</view>
+<view class="centerviews">
+  <text></text>
+</view>
+<view class="weui-footer">
+  <view class="weui-footer__text">Copyright © 2015-2017 dongzheng.dd@163.com</view>
+</view>
+<view class="centerviews">
+  <text></text>
+</view>

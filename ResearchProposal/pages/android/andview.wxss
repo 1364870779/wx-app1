@@ -1,0 +1,17 @@
+/* pages/android/andview.wxss */
+page{
+    background-color: #FFFFFF;
+}
+image{
+    margin: 4px 0;
+}
+.page__titles{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 24px;
+}
+.weui-article__imgs{
+    width: 100%;
+    padding: 0px;
+}

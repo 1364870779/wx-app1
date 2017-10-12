@@ -1,0 +1,172 @@
+<view class="bg">
+    <view class="page__bd page__bd_spacing">
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder1">前端敏捷开发</view></view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder2">Android</view></view>
+            <view class="weui-flex__item"><view class="placeholder3">iOS</view></view>
+            <!--<view class="weui-flex__item"><view class="placeholder">weui</view></view>-->
+            <view><view class="placeholder4">WeChatApplet</view></view>
+        </view>
+        <view class="weui-flex">
+        <view><view class="placeholder5">支付</view></view>
+            <view class="weui-flex__item"><view class="placeholder6">地图</view></view>
+            <view class="weui-flex__item"><view class="placeholder7">第三方社会化分享</view></view>
+            <!--<view class="weui-flex__item"><view class="placeholder">蓝牙</view></view>-->
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder8">BLE4.0</view></view>
+            <view class="weui-flex__item"><view class="placeholder9">AFNetWorking</view></view>
+            <view class="weui-flex__item"><view class="placeholder10">OkhttpUtil</view></view>
+            
+            <!--<view class="weui-flex__item"><view class="placeholder">weui</view></view>-->
+        </view>
+        <view class="weui-flex">
+            <view><view class="placeholder11">tableView</view></view>
+            <view class="weui-flex__item"><view class="placeholder12">RecycleView</view></view>
+            <view><view class="placeholder13">小程序</view></view>
+        </view>
+    </view>
+<!--android-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__titles">{{android}}</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1">{{androidDetail}}</view>
+      <view class="weui-article__section">
+        <view class="weui-article__title">专业技能</view>
+        
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{androidskill1}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{androidskill2}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{androidskill3}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{androidskill4}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{androidskill5}}</view>
+        </view>
+         <view class="weui-article__section">
+          <view class="weui-article__h3">{{androidskill6}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{androidskill7}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{androidskill8}}</view>
+        </view>
+        <view class="weui-article__p">
+            <image class="weui-article__imgs" src="{{imageUrlOne}}" mode="aspectFit"  />
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+<!--iOS-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__titles">{{iOS}}</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1">{{iOSDetail}}</view>
+      <view class="weui-article__section">
+        <view class="weui-article__title">专业技能</view>
+        
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{iOSskill1}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{iOSskill2}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{iOSskill3}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{iOSskill4}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{iOSskill5}}</view>
+        </view>
+         <view class="weui-article__section">
+          <view class="weui-article__h3">{{iOSskill6}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{iOSskill7}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{iOSskill8}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{iOSskill9}}</view>
+        </view>
+        <view class="weui-article__p">
+            <image class="weui-article__imgs" src="{{imageUrlTwo}}" mode="aspectFit"  />
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+<!--weChatApplet-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__titles">{{weChatApplet}}</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1">{{weChatAppletDetail}}</view>
+      <view class="weui-article__section">
+        <view class="weui-article__title">专业技能</view>
+        
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{weChatAppletskill1}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{weChatAppletskill2}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{weChatAppletskill3}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{weChatAppletskill4}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{weChatAppletskill5}}</view>
+        </view>
+         <!--<view class="weui-article__section">
+          <view class="weui-article__h3">{{weChatAppletskill6}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{weChatAppletskill7}}</view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">{{weChatAppletskill8}}</view>
+        </view>-->
+        <view class="weui-article__p">
+            <image class="weui-article__imgs" src="{{imageUrlThree}}" mode="aspectFit"  />
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+<!--footer-->
+ <view class="weui-footer">
+            <view class="weui-footer__links">
+              <navigator url="{{aboutUs}}" class="weui-footer__link" style="color: #16a5af;">关于E-X</navigator>
+              <navigator url="../code/code" class="weui-footer__link" style="color: #16a5af;">联系我们</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2015-2017 dongzheng.dd@163.com</view>
+          </view>
+       
+</view>

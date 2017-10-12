@@ -1,0 +1,49 @@
+/* pages/personal/personal.wxss */
+image{
+    margin: 0px 0;
+}
+.weui-article__imgs{
+    width: 100%;
+    padding: 0px;
+}
+.weui-article__ps{
+    height: 80px;
+}
+.weather_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 0rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.header{
+    height: 250px;
+}
+.talk{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 30px;
+    /*float: right;*/
+    /*justify-content: center;*/
+/*justify-content: right;*/
+}
+.cell{
+    margin: 15px;
+}

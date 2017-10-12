@@ -1,0 +1,74 @@
+/* pages/home/home.wxss */
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.slide-image{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
+}
+.imageview{
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    /*居中显示*/
+    justify-content: space-around;
+}
+.items{
+        height: 400px;
+        margin-top: 10px;
+        background-color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+}
+.row{
+  display:flex;
+  flex-basis: 100%;
+  justify-content:space-around;
+}
+.item1,
+.item2{
+  width: 130px;
+  height:130px;
+}
+.item1{
+  background-color: #0074e0;
+}
+.item2{
+  background-color: #008c00;
+}
+.weui-footer{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.weui-footer_fixed-bottom{
+    margin-bottom: 0;
+}
+.horizonalview{
+    width: 100%;
+}
